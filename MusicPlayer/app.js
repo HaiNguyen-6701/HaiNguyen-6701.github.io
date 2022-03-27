@@ -1,27 +1,12 @@
-////////////////////////////////// MỸ XUỒI ////////////////////////////////////
-///////////////////////////////DATE 31/12/2021 ////////////////////////////////
-/////////////////////////////TASK MUSIC PLAYER   //////////////////////////////////
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-/* 
-1. Render songs
-2. Scroll top
-3. Play / pause / seek
-4. CD rotate
-5. Next / prev
-6. Random
-7. Next / Repeat when ended
-8. Active Song
-9. Scroll active song into view
-10. Play song when click
-*/
 const PLAYER_STORAGE_KEY = 'TUAN_HAI'
-const MUSIC_LOVE = 'MYXUOI_LOVE_SONG'
+const MUSIC_LOVE = 'HAI_LOVE_SONG'
 const playList = $('.playlist')
 const cd = $('.cd')
-const heading = $('header h2')
+const heading = $('header marquee')
 const cdThumb = $('.cd-thumb')
 const audio = $('#audio')
 const playBtn = $('.btn-toggle-play')
@@ -42,6 +27,8 @@ const addLoveSong = $('.add-love')
 const optionBtn = $$('.option')
 const addToLove = $('.add-to-love')
 const overlay = $('.overlay')
+const progressduration = $(".progress__duration")
+const progresscurrent = $(".progress__current")
 
 let randomArray = []
 const app = {
@@ -247,11 +234,14 @@ const app = {
         }
 
         //khi tiến độ bài hát thay đổi
-        audio.ontimeupdate = function() {
-            if (audio.duration) {
-                const progessPercent = audio.currentTime / audio.duration * 100
-                progress.value = progessPercent
-            }
+        // Khi tiến độ bài hát thay đổi
+         audio.ontimeupdate = function () {
+        if (audio.duration) {
+          const progressPercent = Math.floor((audio.currentTime / audio.duration) * 100);
+          progress.value = progressPercent;
+        }
+            _this.timeCurrent()
+            _this.timeDuration()
         }
         //xử lý khi tua bài hát
         progress.oninput = function(e) {
@@ -511,6 +501,36 @@ const app = {
     playRepeatSong:function() {
         this.currentIndex = this.currentIndex
         this.loadCurrentSong()
+    },
+
+    formatTime: function (sec_num) {
+        let hours = Math.floor(sec_num / 3600);
+        let minutes = Math.floor((sec_num - hours * 3600) / 60);
+        let seconds = Math.floor(sec_num - hours * 3600 - minutes * 60);
+    
+        hours = hours < 10 ? (hours > 0 ? '0' + hours : 0) : hours;
+    
+        if (minutes < 10) {
+          minutes = '0' + minutes;
+        }
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+        return (hours !== 0 ? hours + ':' : '') + minutes + ':' + seconds;
+      },
+      // hiển thị thời gian bài hát hiện tại
+      timeCurrent: function () {
+        setInterval(() => {
+          let cur = this.formatTime(audio.currentTime)
+          progresscurrent.textContent = `${cur}`;
+        }, 100)
+      },
+      //hiển thị thời gian bài hát
+      timeDuration: function () {
+        if (audio.duration) {
+          let dur = this.formatTime(audio.duration)
+          progressduration.textContent = `${dur}`;
+        }
     },
 
     start: function() {

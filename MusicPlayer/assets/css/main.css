@@ -10,7 +10,9 @@
 }
 
 body {
-  background-image: linear-gradient( 142.17deg,#101425 6.66%,#7788ef 91.48%);
+  background: url(../img/background.gif);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 html {
@@ -156,12 +158,14 @@ header h2 {
 .progress {
   width: 100%;
   -webkit-appearance: none;
-  height: 6px;
+  height: 10px;
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .progress::-webkit-slider-thumb {
@@ -170,14 +174,22 @@ header h2 {
   width: 12px;
   height: 6px;
   background-color: var(--primary-color);
+  box-shadow: -500px 0 0 500px var(--primary-color);
   cursor: pointer;
+}
+
+.progress-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 10px;
 }
 
 /* Volume */
 
 /* PLAYLIST */
 .playlist {
-  margin-top: 452px;
+  margin-top: 492px;
   padding: 12px;
   margin-bottom: 40px;
 }
