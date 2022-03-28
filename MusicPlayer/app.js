@@ -49,7 +49,7 @@ const app = {
             },
                 {
                 name: 'We dont talk anymore',
-                singer: 'Alan Charlie Puth (feat. Selena Gomez)',
+                singer: 'Charlie Puth (feat. Selena Gomez)',
                 path: './assets/songs/y2mate.com - Charlie Puth  We Dont Talk Anymore feat Selena Gomez Official Video.mp3',
                 image: './assets/img/we-dont-talk-anymore.jpg'
             },
