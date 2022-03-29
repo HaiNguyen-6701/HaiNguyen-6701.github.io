@@ -130,19 +130,19 @@ const app = {
             {
                 name: 'Heartbreaker',
                 singer: 'Vũ Thanh Vân (Cover)',
-                path: './assets/path/vietnam/y2mate.com - VTV Ơ NHA 1M  Ep05 Imma heartbreaker.mp3',
+                path: './assets/songs/vietnam/y2mate.com - VTV Ơ NHA 1M  Ep05 Imma heartbreaker.mp3',
                 image: './assets/img/vietnam/heartbreaker.jpg'
             },
             {
                 name: 'Muộn rồi mà sao còn',
                 singer: 'Sơn Tùng MTP',
-                path: './assets/path/vietnam/y2mate.com - SƠN TÙNG MTP  MUỘN RỒI MÀ SAO CÒN  OFFICIAL MUSIC VIDEO.mp3',
+                path: './assets/songs/vietnam/y2mate.com - SƠN TÙNG MTP  MUỘN RỒI MÀ SAO CÒN  OFFICIAL MUSIC VIDEO.mp3',
                 image: './assets/img/vietnam/muon-roi-ma-sao-con.jpg'
             },
             {
                 name: 'Crying Over You',
                 singer: 'JustaTee ft Binz',
-                path: './assets/path/vietnam/y2mate.com - Official MV Crying Over You  JustaTee ft Binz.mp3',
+                path: './assets/songs/vietnam/y2mate.com - Official MV Crying Over You  JustaTee ft Binz.mp3',
                 image: './assets/img/vietnam/crying-over-you.jpg'
             }
         ],
