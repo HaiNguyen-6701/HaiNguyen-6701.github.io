@@ -124,7 +124,7 @@ const app = {
             {
                 name: 'Đã Lỡ Yêu Em Nhiều',
                 singer: 'JustaTee',
-                path: './assets/songs/vietnam/y2mate.com - JustaTee  Đã Lỡ Yêu Em Nhiều Official MV.mp3',
+                path: './assets/path/vietnam/y2mate.com - JustaTee  Đã Lỡ Yêu Em Nhiều Official MV.mp3',
                 image: './assets/img/vietnam/da-lo-yeu-em-nhieu.jpg'
             },
             {
@@ -142,7 +142,7 @@ const app = {
             {
                 name: 'Crying Over You',
                 singer: 'JustaTee ft Binz',
-                path: './assets/songs/vietnam/y2mate.com - Official MV Crying Over You  JustaTee ft Binz.mp3',
+                path: './assets/path/vietnam/y2mate.com - Official MV Crying Over You  JustaTee ft Binz.mp3',
                 image: './assets/img/vietnam/crying-over-you.jpg'
             }
         ],
