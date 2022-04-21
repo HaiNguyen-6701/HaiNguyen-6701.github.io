@@ -1,0 +1,190 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+
+    .footer {
+        height: auto;
+    }
+
+    
+
+    .header__top {
+    display: none;
+    }
+
+    .option-menu {
+    display: none;
+    }
+
+    .header__navbar-option-img  {
+        margin: auto;
+    }
+    
+    .navbars-btn {
+        display: block;
+    }
+
+    .option-item__hot {
+        display: none;
+    }
+
+    .navbar-option-img__mobile {
+        display: none;
+    }
+
+    .navbar-option__mobile {
+        float: right;
+    }
+
+    
+
+    .statistics-first {
+        text-align: center;
+    }
+
+    .statistics-second {
+        margin-top: 50px;
+    }
+
+    .content-heading__title {
+        margin-top: 100px;
+    }
+    
+    
+
+    .package-tour-section-item,
+    .package-tour-section-item-center {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .content-event__proposals {
+        height: 344px;
+        padding: 48px 40px;
+    }
+
+    .content__section-fisrt,
+    .content__section-second {
+        margin-top: 30px;
+    }
+
+    .Searching-parallax {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .industry__content {
+        margin: auto;
+    }
+
+    .industry__content-item {
+        padding: 20px;
+    }
+
+    .footer {
+        height: 100vh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .navbar-option__mobile {
+        width: 80%;
+    }
+    .Searching-parallax {
+        height: 1060px;
+        overflow: hidden;
+    }
+
+    .search__section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .search-section__submit-btn {
+        padding: 12px 84px;
+    }
+
+    
+
+    .content__section-fisrt {
+        margin:auto;
+    }
+
+    .content__section-second {
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+    .statistics-first {
+        padding: 0;
+    }
+
+    .statistics-first__heading {
+        padding:0 0 20px 0;
+    }
+
+    .content-event__proposals {
+        max-width: 90%;
+        height: auto;
+        padding: 40px 40px;
+        margin: auto;
+    }
+
+    .event-item {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .industry {
+        height: auto;
+    }
+
+    .package-tour-section-item {
+        width: 90%;
+        margin: auto;
+    }
+
+    .package-tour-section-item-center {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .footer-content {
+        margin-bottom: 50px;
+        padding: 0 40px;
+    }
+
+    .footer-feedback__form {
+        display: block;
+    }
+
+    .footer-feedback__item-first {
+        padding: 0;
+    }
+
+    .footer-feedback__item-content {
+        width: 100%;
+    }
+
+    .footer-feedback__item-send {
+        width: 100%;
+    }
+
+    .footer-feedback__item-second {
+        margin: 0;
+    }
+
+    .footer-other-info {
+        padding: 0 20px;
+    }
+
+    .footer__bottom-item {
+        padding: 5px;
+    }
+}
+
+
